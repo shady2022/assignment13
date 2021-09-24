@@ -78,7 +78,7 @@ class MyGame(arcade.Window):
         self.h = 600
         self.gravity = 0.2
         super().__init__(self.w, self.h, "NightLamia")
-        self.background_image = arcade.load_texture('NightLamia/art.png')
+        self.background_image = arcade.load_texture('art.png')
         self.t1 = time.time()
         self.me = Player()
         self.lamia_list = arcade.SpriteList()
