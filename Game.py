@@ -1,7 +1,7 @@
 import random
 import time
 import arcade
-from pyglet.window.key import G
+
 
 
 class Player(arcade.AnimatedWalkingSprite):
@@ -78,7 +78,7 @@ class MyGame(arcade.Window):
         self.h = 600
         self.gravity = 0.2
         super().__init__(self.w, self.h, "NightLamia")
-        self.background_image = arcade.load_texture('C:/python_programming/NightLamia/concept-art.png')
+        self.background_image = arcade.load_texture('NightLamia/art.png')
         self.t1 = time.time()
         self.me = Player()
         self.lamia_list = arcade.SpriteList()
